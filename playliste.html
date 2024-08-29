@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Playliste</h1>
+    <ul id="playliste"></ul>
+
+    <script>
+      const liste = document.querySelector("ul");
+
+      const sange = [
+        "sang1",
+        "sang2",
+        "sang3",
+        "sang4",
+        "sang5",
+        "sang6",
+        "sang7",
+        "sang8",
+        "sang9",
+        "sang10",
+      ];
+
+      sange.forEach(putListe);
+
+      function putListe(element, i) {
+        console.log(element);
+        liste.innerHTML += "<li>" + element + "</li>";
+      }
+    </script>
+  </body>
+</html>
