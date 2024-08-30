@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Øvelse 3</title>
+    <link rel="stylesheet" href="objekt.html" />
+  </head>
+  <body>
+    <h1>Tøj</h1>
+    <template id="kjoletemplate">
+      <article>
+        <h2>Kjoler</h2>
+        <p>Model</p>
+        <div>farver</div>
+      </article>
+    </template>
+  </body>
+
+  <section id="kjoleliste"></section>
+
+  <script>
+    const kjoler = [
+      {
+        længde: "midi",
+        materiale: "bomuld",
+        farver: ["blå", "gul", "rød"],
+      },
+      {
+        længde: "maxi",
+        materiale: "satin",
+        farver: ["blå", "gul", "rød"],
+      },
+      {
+        længde: "mini",
+        materiale: "denim",
+        farver: ["blå", "gul", "rød"],
+      },
+    ];
+
+    const skabelon = document.querySelector("template").content;
+    const kjoleliste = document.querySelector("#kjoleliste");
+
+    kjoler.forEach(visKjoler);
+
+    function visKjoler(kjoler) {
+      console.log(kjoler);
+      const klon = temp.cloneNode(true);
+      klon.querySelector("h2").textContent = kjoler.længde;
+      klon.querySelector("h2").textContent = kjoler.materiale;
+      klon.querySelector("h3").textContent = kjoler.farver;
+    }
+  </script>
+</html>
