@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formular</h1>
+    </header>
+    <main>
+      <div class="Kontaktformular">
+        <form>
+          <div class="form_felt">
+            <div>
+              <label for="Full_name">Fulde navn:</label>
+              <input
+                id="Full_name"
+                placeholder="Fornavn og efternavn"
+                name="fname"
+                type="text"
+              />
+            </div>
+
+            <div>
+              <label for="Telefon_nummer">Telefonnummer:</label>
+              <input
+                id="Telefon_nummer"
+                placeholder="+45"
+                name="Telefon_nummer"
+                type="tel"
+              />
+            </div>
+
+            <div>
+              <label for="Email">Mail:</label>
+              <input
+                id="Email"
+                placeholder="Skriv din mail"
+                name="Email"
+                type="email"
+              />
+            </div>
+          </div>
+
+          <div class="form_tekst">
+            <label for="beskrivelse">Hvad kan vi hjælpe dig med?</label>
+            <textarea
+              id="beskrivelse"
+              name="beskrivelse"
+              placeholder="Skriv her..."
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button class="send_knap">Send</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

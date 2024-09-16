@@ -1,0 +1,103 @@
+.Kontaktformular {
+  label,
+  input,
+  button {
+    display: block;
+  }
+  background-color: antiquewhite;
+  border-radius: 6px;
+  color: black;
+  font-family: plus jakarta sans;
+  gap: 10px;
+  padding: 2em;
+  padding-bottom: 4em;
+}
+
+.form_felt {
+  margin: 1rem;
+  input,
+  textarea {
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 10px;
+    font-family: plus jakarta sans;
+    font-size: 12px;
+    width: 80%;
+  }
+  label {
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+}
+
+.form_tekst {
+  margin: 1rem;
+  input,
+  textarea {
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 10px;
+    font-family: plus jakarta sans;
+    font-size: 12px;
+    width: 80%;
+  }
+  label {
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+}
+
+.send_knap {
+  border: 2px solid rgb(134, 106, 70);
+  background-color: antiquewhite;
+  font-family: plus jakarta sans;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: rgb(134, 106, 70);
+  float: right;
+  margin: 10px;
+}
+
+.kontakt_informationer {
+  padding: 10px;
+}
+
+/* @media (min-width: 800px) {
+  .Kontaktformular form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kontakt_informationer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .img_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 799px) {
+  .Kontaktformular {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .send_knap {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .kontakt_informationer {
+    display: grid;
+    justify-content: center;
+  }
+  .img_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+} */
